@@ -26,4 +26,4 @@ printf "\n=====>\tSwitching back to previous branch: %s...\n" "${head}"
 
 git checkout "${head}"
 
-printf "\n=====>\tRelease in progress: https://github.com/strvcom/heimdall/actions\n"
+printf "\n=====>\tRelease in progress: https://github.com/Dreamscapes/mocha-profiler/actions\n"
