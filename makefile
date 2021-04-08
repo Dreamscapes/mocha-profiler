@@ -1,6 +1,6 @@
 # Defining shell is necessary in order to modify PATH
 SHELL := sh
-export PATH := node_modules/.bin/:$(PATH)
+export PATH := $(PATH):node_modules/.bin/
 export NODE_OPTIONS := --trace-deprecation
 
 # On CI servers, use the `npm ci` installer to avoid introducing changes to the package-lock.json
