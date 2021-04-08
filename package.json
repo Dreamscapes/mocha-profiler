@@ -1,7 +1,7 @@
 {
   "name": "mocha-profiler",
   "description": "Generate a CPU profile of your Mocha test suite execution",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Robert Rossmann <rr.rossmann@me.com>",
   "contributors": [],
   "devDependencies": {
