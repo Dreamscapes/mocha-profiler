@@ -6,10 +6,8 @@ import * as readpkg from 'read-pkg-up'
 import type { RootHookObject } from 'mocha'
 
 const session = new inspector.Session()
-const procname = process.argv0
 const pkgname = readpkg.sync()?.packageJson.name
-const pid = process.pid
-const filename = `${pkgname?.length ? pkgname : procname}.${pid}.cpuprofile`
+const filename = `${pkgname?.length ? pkgname : process.argv0}.${process.pid}.cpuprofile`
 const destination = path.resolve(process.cwd(), filename)
 
 const mochaHooks: RootHookObject = {
