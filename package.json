@@ -1,0 +1,43 @@
+{
+  "name": "mocha-profiler",
+  "description": "Generate a CPU profile of your Mocha test suite execution",
+  "version": "0.0.1",
+  "author": "Robert Rossmann <rr.rossmann@me.com>",
+  "contributors": [],
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@strv/commitlint-config": "^1.1.0",
+    "@strv/eslint-config-mocha": "^3.0.0-alpha.3",
+    "@strv/eslint-config-node": "^3.0.0-alpha.4",
+    "@strv/eslint-config-typescript": "^3.0.0-alpha.6",
+    "@strv/remark-config": "^1.0.2",
+    "@types/mocha": "^8.2.2",
+    "eslint": "^7.23.0",
+    "expect": "^26.6.2",
+    "mocha": "^8.3.2",
+    "remark-cli": "^9.0.0",
+    "semantic-release": "^17.4.2",
+    "source-map-support": "^0.5.19",
+    "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "mocha": ">=8"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "cpu",
+    "hook",
+    "mocha",
+    "profiler"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "src",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "read-pkg-up": "^7.0.1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/*.ts.map": true,
+    "**/*.{js,d.ts}": {
+      "when": "$(basename).ts"
+    },
+    ".eslintcache": true,
+    "*.tsbuildinfo": true,
+    ".buildstate": true,
+    ".nyc_output": true,
+  },
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "eslint.lintTask.enable": true,
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+  "eslint.lintTask.options": "--cache --ext js,ts .",
+  "mochaExplorer.files": "{src,test}/**/*.test.js"
+}

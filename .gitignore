@@ -1,0 +1,43 @@
+# Dependencies
+node_modules
+
+# Local configuration
+.env
+.bashrc
+.zshrc
+.npmrc
+local.mk
+
+# Compiled files
+**/*.js
+**/*.js.map
+**/*.d.ts
+**/*.d.ts.map
+!*.config.js
+!**/.*.js
+
+# Generated files
+.nvmrc
+docs
+coverage
+gh-pages
+
+# Garbage
+*.log
+*.cpuprofile
+*~
+*#
+.DS_Store
+.nyc_output
+.eslintcache
+*.tsbuildinfo
+.buildstate
+
+# IDE stuff
+.netbeans
+nbproject
+.idea
+.node_history
+*.sublime-*
+*.atom-*
+.tern-*

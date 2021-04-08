@@ -1,0 +1,113 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "make:test",
+      "detail": "Run the test suite",
+      "type": "process",
+      "command": "make",
+      "args": [
+        "test"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "presentation": {
+        "clear": true
+      }
+    },
+    {
+      "label": "make:compile",
+      "detail": "Compile the project (TypeScript)",
+      "type": "process",
+      "command": "make",
+      "args": [
+        "compile"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "revealProblems": "onProblem",
+        "clear": true
+      },
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+    {
+      "label": "make:watch/compile",
+      "detail": "Start TypeScript compiler in watch mode",
+      "type": "process",
+      "command": "make",
+      "args": [
+        "watch/compile"
+      ],
+      "problemMatcher": [
+        "$tsc-watch",
+      ],
+      "group": "build",
+      "isBackground": true,
+      "runOptions": {
+        "instanceLimit": 1,
+        "runOn": "folderOpen"
+      },
+      "presentation": {
+        "echo": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true,
+        "reveal": "never",
+        "revealProblems": "onProblem"
+      },
+    },
+    {
+      "label": "make:watch/test",
+      "detail": "Start Test suite in watch mode",
+      "type": "process",
+      "command": "make",
+      "args": [
+        "watch/test"
+      ],
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "group": "test",
+      "isBackground": true,
+      "runOptions": {
+        "instanceLimit": 1
+      },
+      "presentation": {
+        "echo": false,
+        "panel": "dedicated",
+        "showReuseMessage": false,
+        "clear": true
+      }
+    },
+    {
+      "label": "make:lint",
+      "detail": "Lint the project",
+      "type": "process",
+      "command": "make",
+      "args": [
+        "lint"
+      ],
+      "group": "test",
+      "problemMatcher": [
+        "$eslint-stylish"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "clear": true,
+        "revealProblems": "onProblem"
+      }
+    }
+  ],
+}
