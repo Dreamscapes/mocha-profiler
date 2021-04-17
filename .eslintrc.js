@@ -34,13 +34,12 @@ module.exports = {
 
   overrides: [{
     files: [
-      'src/**/*.ts',
-      'test/**/*.ts',
-      'test/**/*.test.ts',
+      '**/*.ts',
+      '**/*.test.ts',
     ],
 
     extends: [
-      '@strv/node/v12',
+      '@strv/node/v14',
       '@strv/node/optional',
       '@strv/eslint-config-typescript',
       '@strv/eslint-config-typescript/style',
